@@ -13,13 +13,19 @@ export const styles = StyleSheet.create({
         width: '100%',
         flexDirection: 'row',
         paddingHorizontal: 10,
-        marginTop: 40,
+        marginTop: 20,
     },
     headerOptions: {
         alignItems: 'center',
         flexDirection: 'row',
         gap: 10,
         paddingRight: 5,
+    },
+    storiesName: {
+        marginTop: 5, // Espaço entre a imagem e o nome
+        fontSize: 14, // Tamanho da fonte // Negrito, opcional
+        textAlign: 'center', // Alinha o nome ao centro
+        color: '#fff',
     },
     stories: {
         width: '100%',
@@ -28,15 +34,15 @@ export const styles = StyleSheet.create({
         paddingVertical: 10,
     },
     storiesCard: {
-        borderWidth: 2,
-        borderColor: '#C13584',
-        borderRadius: 50,
         marginRight: 14,
         padding: 2,
     },
     storiesCardImage: {
         width: 64,
         height: 64,
+        borderWidth: 2,
+        borderColor: '#C13584',
+        borderRadius: 50,
     },
     content: {
         width: '100%',
@@ -58,6 +64,10 @@ export const styles = StyleSheet.create({
     contentHeaderImg: {
         width: 40,
         height: 40,
+        borderWidth: 2,
+        borderColor: '#C13584',
+        borderRadius: 50,
+        padding: 10,
     },
     contentHeaderImgText: {
         color: '#fff'
@@ -79,13 +89,41 @@ export const styles = StyleSheet.create({
     contentText: {
         paddingHorizontal: 5,
         paddingTop: 5,
-        
     },
     textLikes: {
         color: '#fff',
         fontWeight: 'bold',
+        padding: 5,
+    },
+    comment: {
+        flexDirection: 'row',
+        padding: 5,
+        alignItems: 'center',
+        marginBottom: 5,
+    },
+    textSubtitleTitle: {
+        color: '#fff',
+        fontWeight: 'bold',
+    },
+    textSubtitle: {
+        color: '#fff',
+        paddingLeft: 5,
     },
     textComment: {
-        color: '#fff',
+        paddingLeft: 5,
+        color: '#A9A9A9',
+    },
+    timeComment: {
+        color: '#A9A9A9',
+    },
+    contentFooter: {
+        flexDirection: 'row',
+        paddingHorizontal: 20,
+        marginTop: 5,
+        justifyContent: 'space-between',
+    },
+    footerImg: {
+        width: 30,
+        height: 30,
     },
 })

@@ -14,35 +14,45 @@ import Bookmark from './src/assets/Bookmark.png'
 import Heart from './src/assets/Heart.png'
 import Comment from './src/assets/Comment.png'
 import Share from './src/assets/Share.png'
+import House from './src/assets/house.png'
+import Search from './src/assets/search.png'
+import Union from './src/assets/union.png'
 
 const DATA = [
   {
     id: Math.random().toString(36).substring(2, 27),
     photoURL: foto,
+    name: "Ciclana",
   },
   {
     id: Math.random().toString(36).substring(2, 27),
     photoURL: foto2,
+    name: "Ciclana",
   },
   {
     id: Math.random().toString(36).substring(2, 27),
     photoURL: foto3,
+    name: "Ciclana",
   },
   {
     id: Math.random().toString(36).substring(2, 27),
     photoURL: foto4,
+    name: "Ciclana",
   },
   {
     id: Math.random().toString(36).substring(2, 27),
     photoURL: foto2,
+    name: "Ciclana",
   },
   {
     id: Math.random().toString(36).substring(2, 27),
     photoURL: foto3,
+    name: "Ciclana",
   },
   {
     id: Math.random().toString(36).substring(2, 27),
     photoURL: foto4,
+    name: "Ciclana",
   },
 ]
 export default function App() {
@@ -63,8 +73,8 @@ export default function App() {
         renderItem={item => (
           <View style={styles.storiesCard} key={item.item.id}>
             <Image source={item.item.photoURL} style={styles.storiesCardImage} />
+            <Text style={styles.storiesName}> {item.item.name} </Text>
           </View>
-
         )}
       />
     </View>
@@ -90,14 +100,25 @@ export default function App() {
         <Image source={Bookmark} />
       </View>
       <View style={styles.contentText}>
-        <Text style={styles.textLikes}>18 curtidas</Text>
-        <View>
-          <Text>Ciclana</Text>
-          <Text>Comment</Text>
+        <Text style={styles.textLikes}>221 curtidas</Text>
+        <View style={styles.comment}>
+          <Text style={styles.textSubtitleTitle}>Ciclana</Text>
+          <Text style={styles.textSubtitle}>Comentário aqui</Text>
         </View>
-        <Text></Text>
+        <Text style={styles.textComment}>Ver todos os comentários</Text>
+        <View style={styles.comment}>
+          <Text style={styles.timeComment}>Há 22 horas . </Text>
+          <Text style={styles.textSubtitleTitle}>Ver tradução</Text>
+        </View>
+      </View>
+      <View style={styles.contentFooter}>
+        <Image source={House}/>
+        <Image source={Search}/>
+        <Image source={House}/>
+        <Image source={Union}/>
+        <Image source={foto} style={styles.footerImg} />
       </View>
     </View>
-  </View >
+  </View>
 }
 
