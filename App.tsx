@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, Image, View } from 'react-native';
+import { FlatList, Image, Text, View } from 'react-native';
 import { styles } from './styles'
 import Logo from './src/assets/logo.png'
 import Stroke from './src/assets/stroke.png'
@@ -8,6 +8,7 @@ import foto from './src/assets/foto.png'
 import foto2 from './src/assets/foto2.png'
 import foto3 from './src/assets/foto3.png'
 import foto4 from './src/assets/foto4.png'
+import Points from './src/assets/points.png'
 
 const DATA = [
   {
@@ -25,10 +26,6 @@ const DATA = [
   {
     id: Math.random().toString(36).substring(2, 27),
     photoURL: foto4,
-  },
-  {
-    id: Math.random().toString(36).substring(2, 27),
-    photoURL: foto,
   },
   {
     id: Math.random().toString(36).substring(2, 27),
@@ -65,6 +62,17 @@ export default function App() {
 
         )}
       />
+    </View>
+    <View style={styles.content}>
+      <View style={styles.contentHeader}>
+        <View style={styles.contentHeaderLeft}>
+        <View style={styles.storiesCard}>
+        <Image source={foto} style={styles.contentHeaderImg} />
+          </View>
+          <Text style={styles.contentHeaderImgText}>Fulana</Text>
+        </View>
+        <Image source={Points}/>
+      </View>
     </View>
   </View >
 }

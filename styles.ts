@@ -38,4 +38,28 @@ export const styles = StyleSheet.create({
         width: 64,
         height: 64,
     },
+    content: {
+        width: '100%',
+        marginBottom: 10,
+    },
+    contentHeader: {
+        marginTop: 25,
+        height: 52,
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        paddingHorizontal: 10,
+    },
+    contentHeaderLeft: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 3,
+    },
+    contentHeaderImg: {
+        width: 40,
+        height: 40,
+    },
+    contentHeaderImgText: {
+        color: '#fff'
+    },
 })
