@@ -21,4 +21,21 @@ export const styles = StyleSheet.create({
         gap: 10,
         paddingRight: 5,
     },
+    stories: {
+        width: '100%',
+        paddingLeft: 10,
+        alignContent: 'center',
+        paddingVertical: 10,
+    },
+    storiesCard: {
+        borderWidth: 2,
+        borderColor: '#C13584',
+        borderRadius: 50,
+        marginRight: 14,
+        padding: 2,
+    },
+    storiesCardImage: {
+        width: 64,
+        height: 64,
+    },
 })
