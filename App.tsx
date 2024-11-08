@@ -9,6 +9,11 @@ import foto2 from './src/assets/foto2.png'
 import foto3 from './src/assets/foto3.png'
 import foto4 from './src/assets/foto4.png'
 import Points from './src/assets/points.png'
+import Imagem from './src/assets/image.png'
+import Bookmark from './src/assets/Bookmark.png'
+import Heart from './src/assets/Heart.png'
+import Comment from './src/assets/Comment.png'
+import Share from './src/assets/Share.png'
 
 const DATA = [
   {
@@ -66,12 +71,31 @@ export default function App() {
     <View style={styles.content}>
       <View style={styles.contentHeader}>
         <View style={styles.contentHeaderLeft}>
-        <View style={styles.storiesCard}>
-        <Image source={foto} style={styles.contentHeaderImg} />
+          <View style={styles.storiesCard}>
+            <Image source={foto} style={styles.contentHeaderImg} />
           </View>
           <Text style={styles.contentHeaderImgText}>Fulana</Text>
         </View>
-        <Image source={Points}/>
+        <Image source={Points} />
+      </View>
+      <View>
+        <Image style={styles.contentImg} source={Imagem} />
+      </View>
+      <View style={styles.contentFeed}>
+        <View style={styles.contentFooterLeft}>
+          <Image source={Heart} />
+          <Image source={Comment} />
+          <Image source={Share} />
+        </View>
+        <Image source={Bookmark} />
+      </View>
+      <View style={styles.contentText}>
+        <Text style={styles.textLikes}>18 curtidas</Text>
+        <View>
+          <Text>Ciclana</Text>
+          <Text>Comment</Text>
+        </View>
+        <Text></Text>
       </View>
     </View>
   </View >

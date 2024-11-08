@@ -62,4 +62,30 @@ export const styles = StyleSheet.create({
     contentHeaderImgText: {
         color: '#fff'
     },
+    contentImg: {
+        marginVertical: 5,
+    },
+    contentFeed: {
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingHorizontal: 5,
+    },
+    contentFooterLeft: {
+        alignItems: 'center',
+        flexDirection: 'row',
+        gap: 10,
+    },
+    contentText: {
+        paddingHorizontal: 5,
+        paddingTop: 5,
+        
+    },
+    textLikes: {
+        color: '#fff',
+        fontWeight: 'bold',
+    },
+    textComment: {
+        color: '#fff',
+    },
 })
