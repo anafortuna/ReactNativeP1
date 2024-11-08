@@ -17,6 +17,7 @@ import Share from './src/assets/Share.png'
 import House from './src/assets/house.png'
 import Search from './src/assets/search.png'
 import Union from './src/assets/union.png'
+import Add from './src/assets/add.png'
 
 const DATA = [
   {
@@ -114,7 +115,7 @@ export default function App() {
       <View style={styles.contentFooter}>
         <Image source={House}/>
         <Image source={Search}/>
-        <Image source={House}/>
+        <Image style={styles.imgPlus} source={Add}/>
         <Image source={Union}/>
         <Image source={foto} style={styles.footerImg} />
       </View>

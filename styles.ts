@@ -126,4 +126,9 @@ export const styles = StyleSheet.create({
         width: 30,
         height: 30,
     },
+    imgPlus: {
+        tintColor: "#fff",
+        width: 25,
+        height: 25,
+    },
 })
