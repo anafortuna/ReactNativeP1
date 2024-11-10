@@ -40,6 +40,9 @@ export const styles = StyleSheet.create({
     storiesCardImage: {
         width: 64,
         height: 64,
+    },
+    storiesCardBorder: {
+        padding: 3, // Espaço preto entre a imagem e a borda colorida
         borderWidth: 2,
         borderColor: '#C13584',
         borderRadius: 50,
@@ -64,10 +67,6 @@ export const styles = StyleSheet.create({
     contentHeaderImg: {
         width: 40,
         height: 40,
-        borderWidth: 2,
-        borderColor: '#C13584',
-        borderRadius: 50,
-        padding: 10,
     },
     contentHeaderImgText: {
         color: '#fff'
@@ -81,7 +80,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingHorizontal: 5,
     },
-    contentFooterLeft: {
+    contentLeft: {
         alignItems: 'center',
         flexDirection: 'row',
         gap: 10,
@@ -99,7 +98,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         padding: 5,
         alignItems: 'center',
-        marginBottom: 5,
+        marginBottom: 3,
     },
     textSubtitleTitle: {
         color: '#fff',
@@ -116,15 +115,22 @@ export const styles = StyleSheet.create({
     timeComment: {
         color: '#A9A9A9',
     },
+    footer: {
+        borderTopColor: '#A9A9A9',
+        borderTopWidth: 0.18,
+        position: 'static',
+    },
     contentFooter: {
         flexDirection: 'row',
         paddingHorizontal: 20,
-        marginTop: 5,
+        marginVertical: 5,
         justifyContent: 'space-between',
     },
     footerImg: {
         width: 30,
-        height: 30,
+        height: 30, // Certifique-se de que a altura seja igual à largura
+        borderRadius: 50, // Ajuste para que a imagem tenha bordas arredondadas completas
+        resizeMode: 'cover', // Garante que a imagem ocupe todo o espaço sem cortes
     },
     imgPlus: {
         tintColor: "#fff",

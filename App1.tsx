@@ -73,7 +73,9 @@ export default function App() {
         keyExtractor={item => item.id}
         renderItem={item => (
           <View style={styles.storiesCard} key={item.item.id}>
-            <Image source={item.item.photoURL} style={styles.storiesCardImage} />
+            <View style={styles.storiesCardBorder}>
+              <Image source={item.item.photoURL} style={styles.storiesCardImage} />
+            </View>
             <Text style={styles.storiesName}> {item.item.name} </Text>
           </View>
         )}
@@ -83,7 +85,9 @@ export default function App() {
       <View style={styles.contentHeader}>
         <View style={styles.contentHeaderLeft}>
           <View style={styles.storiesCard}>
-            <Image source={foto} style={styles.contentHeaderImg} />
+            <View style={styles.storiesCardBorder}>
+              <Image source={foto} style={styles.contentHeaderImg} />
+            </View>
           </View>
           <Text style={styles.contentHeaderImgText}>Fulana</Text>
         </View>
@@ -93,7 +97,7 @@ export default function App() {
         <Image style={styles.contentImg} source={Imagem} />
       </View>
       <View style={styles.contentFeed}>
-        <View style={styles.contentFooterLeft}>
+        <View style={styles.contentLeft}>
           <Image source={Heart} />
           <Image source={Comment} />
           <Image source={Share} />
@@ -112,12 +116,14 @@ export default function App() {
           <Text style={styles.textSubtitleTitle}>Ver tradução</Text>
         </View>
       </View>
-      <View style={styles.contentFooter}>
-        <Image source={House}/>
-        <Image source={Search}/>
-        <Image style={styles.imgPlus} source={Add}/>
-        <Image source={Union}/>
-        <Image source={foto} style={styles.footerImg} />
+      <View style={styles.footer}>
+        <View style={styles.contentFooter}>
+          <Image source={House} />
+          <Image source={Search} />
+          <Image style={styles.imgPlus} source={Add} />
+          <Image source={Union} />
+          <Image source={foto} style={styles.footerImg} />
+        </View>
       </View>
     </View>
   </View>
