@@ -4,7 +4,8 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#000',
-        alignItems: 'center',
+        alignItems: 'flex-start', 
+        paddingBottom: 40,
     },
     header: {
         alignItems: 'center',
@@ -48,37 +49,34 @@ export const styles = StyleSheet.create({
         borderRadius: 50,
     },
     content: {
-        width: '100%',
         marginBottom: 10,
     },
     contentHeader: {
-        marginTop: 25,
-        height: 52,
-        alignItems: 'center',
         justifyContent: 'space-between',
         flexDirection: 'row',
-        paddingHorizontal: 10,
+        paddingLeft: 10,
+        paddingRight: 60,
+        alignItems: 'center',
     },
     contentHeaderLeft: {
         flexDirection: 'row',
         alignItems: 'center',
-        gap: 3,
     },
     contentHeaderImg: {
         width: 40,
         height: 40,
     },
     contentHeaderImgText: {
-        color: '#fff'
+        color: '#fff',
     },
     contentImg: {
         marginVertical: 5,
     },
     contentFeed: {
-        width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: 5,
+        paddingRight: 50,
+        paddingLeft: 5,
     },
     contentLeft: {
         alignItems: 'center',
@@ -98,7 +96,6 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         padding: 5,
         alignItems: 'center',
-        marginBottom: 3,
     },
     textSubtitleTitle: {
         color: '#fff',
@@ -118,7 +115,13 @@ export const styles = StyleSheet.create({
     footer: {
         borderTopColor: '#A9A9A9',
         borderTopWidth: 0.18,
-        position: 'static',
+        width: '100%',
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        zIndex: 10,
+        backgroundColor: '#000', 
     },
     contentFooter: {
         flexDirection: 'row',
@@ -128,9 +131,9 @@ export const styles = StyleSheet.create({
     },
     footerImg: {
         width: 30,
-        height: 30, // Certifique-se de que a altura seja igual à largura
-        borderRadius: 50, // Ajuste para que a imagem tenha bordas arredondadas completas
-        resizeMode: 'cover', // Garante que a imagem ocupe todo o espaço sem cortes
+        height: 30,
+        borderRadius: 50, 
+        resizeMode: 'cover', 
     },
     imgPlus: {
         tintColor: "#fff",
