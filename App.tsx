@@ -1,7 +1,7 @@
 import React from 'react'
 import { FlatList, Image, ScrollView, Text, View } from 'react-native';
 import { styles } from './styles'
-import Logo from './src/assets/logo.png'
+import Logo from './src/assets/logo2.png'
 import Stroke from './src/assets/stroke.png'
 import foto from './src/assets/foto.png'
 import foto2 from './src/assets/foto2.png'
@@ -128,7 +128,7 @@ export default function App() {
   return <View style={styles.container}>
     <View style={styles.header}>
       <View style={styles.headerLeft}>
-        <Image source={Logo} />
+        <Image source={Logo} style={styles.logoImg} />
         <Image source={Down} style={styles.downIcon} />
       </View>
       <View style={styles.headerOptions}>

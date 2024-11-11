@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#000',
         alignItems: 'flex-start', 
-        paddingBottom: 40,
+        paddingBottom: 50,
         width: '100%',
     },
     header: {
@@ -20,6 +20,11 @@ export const styles = StyleSheet.create({
     headerLeft: {
         flexDirection: 'row',
         alignItems: 'center',
+    },
+    logoImg: {
+        height: 40,
+        width: 140,
+        tintColor: '#fff'
     },
     downIcon: {
         tintColor: '#fff',
