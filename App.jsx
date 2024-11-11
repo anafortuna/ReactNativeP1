@@ -2,108 +2,132 @@ import React from 'react'
 import { FlatList, Image, Text, TextInput, View } from 'react-native';
 import { styles } from './stylesPag2'
 import Search from './src/assets/search.png'
-import House from './src/assets/house.png'
+import House from './src/assets/casa.png'
 import Union from './src/assets/union.png'
 import Add from './src/assets/add.png'
-import foto from './src/assets/foto.png'
-import Imagem from './src/assets/image.png'
+import foto from './src/assets/fotoPerfil2.png'
+import Imagem1 from './src/assets/1.png'
+import Imagem2 from './src/assets/2.png'
+import Imagem3 from './src/assets/3.png'
+import Imagem4 from './src/assets/4.png'
+import Imagem5 from './src/assets/5.png'
+import Imagem6 from './src/assets/6.png'
+import Imagem7 from './src/assets/7.png'
+import Imagem8 from './src/assets/8.png'
+import Imagem9 from './src/assets/9.png'
+import Imagem10 from './src/assets/10.png'
+import Imagem11 from './src/assets/11.png'
+import Imagem12 from './src/assets/12.png'
+import Imagem13 from './src/assets/13.png'
+import Imagem14 from './src/assets/14.png'
+import Imagem15 from './src/assets/15.png'
+import Imagem16 from './src/assets/16.png'
+import Imagem17 from './src/assets/17.png'
+import Imagem18 from './src/assets/18.png'
+import Imagem19 from './src/assets/19.png'
+import Imagem20 from './src/assets/20.png'
+import Imagem21 from './src/assets/21.png'
+import Imagem22 from './src/assets/22.png'
+import Imagem23 from './src/assets/23.png'
+import Imagem24 from './src/assets/24.png'
+import Procurar from './src/assets/procurar.png'
 
 const DATA = [
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem1,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem2,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem3,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem4,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem5,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem6,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem7,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem8,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem9,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem10,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem11,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem12,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem13,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem14,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem15,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem16,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem17,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem18,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem19,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem20,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem21,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem22,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem23,
     },
     {
         id: Math.random().toString(36).substring(2, 27),
-        photoURL: Imagem,
+        photoURL: Imagem24,
     },
 ]
 export default function App() {
@@ -130,9 +154,9 @@ export default function App() {
         </View>
         <View style={styles.footer}>
             <View style={styles.contentFooter}>
-                <Image source={House} />
-                <Image source={Search} />
-                <Image style={styles.imgPlus} source={Add} />
+                <Image source={House} style={styles.footerIcon} />
+                <Image source={Procurar} style={styles.footerIcon} />
+                <Image style={styles.footerIcon} source={Add} />
                 <Image source={Union} />
                 <Image source={foto} style={styles.footerImg} />
             </View>

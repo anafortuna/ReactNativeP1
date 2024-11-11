@@ -14,7 +14,8 @@ export const styles = StyleSheet.create({
         marginHorizontal: 15,
         backgroundColor: '#262626',
         marginTop: 50,
-        borderRadius: 15,
+        borderRadius: 10,
+        height: 40,
     },
     inputIcon: {
         position: 'absolute',
@@ -66,7 +67,7 @@ export const styles = StyleSheet.create({
         borderRadius: 50, // Ajuste para que a imagem tenha bordas arredondadas completas
         resizeMode: 'cover', // Garante que a imagem ocupe todo o espaço sem cortes
     },
-    imgPlus: {
+    footerIcon: {
         tintColor: "#fff",
         width: 25,
         height: 25,
