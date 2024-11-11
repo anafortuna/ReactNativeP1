@@ -135,6 +135,7 @@ export const styles = StyleSheet.create({
         right: 0,
         zIndex: 10,
         backgroundColor: '#000', 
+        paddingVertical: 8,
     },
     contentFooter: {
         flexDirection: 'row',

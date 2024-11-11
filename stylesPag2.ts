@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
         paddingLeft: 35,
         paddingVertical: 10,
         marginHorizontal: 15,
-        backgroundColor: '#262626',
+        backgroundColor: '#363636',
         marginTop: 50,
         borderRadius: 10,
         height: 40,
@@ -54,6 +54,7 @@ export const styles = StyleSheet.create({
         right: 0,
         zIndex: 10,
         backgroundColor: '#000', 
+        paddingVertical: 8,
     },
     contentFooter: {
         flexDirection: 'row',
