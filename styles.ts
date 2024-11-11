@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#121212',
-        alignItems: 'flex-start', 
+        alignItems: 'flex-start',
         paddingBottom: 50,
         width: '100%',
     },
@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
     },
     downIcon: {
         tintColor: '#fff',
-    },   
+    },
     headerOptions: {
         alignItems: 'center',
         flexDirection: 'row',
@@ -40,28 +40,28 @@ export const styles = StyleSheet.create({
         height: 25,
     },
     storiesName: {
-        marginTop: 5, 
-        fontSize: 14, 
-        textAlign: 'center', 
+        marginTop: 5,
+        fontSize: 14,
+        textAlign: 'center',
         color: '#fff',
     },
     stories: {
         width: '100%',
         paddingLeft: 10,
         alignContent: 'center',
-        paddingVertical: 10,
-        marginBottom: 10,
+        paddingVertical: 0,
+        marginBottom: 5,
     },
     storiesCard: {
         marginRight: 14,
-        padding: 2,
+        paddingVertical: 10,
     },
     storiesCardImage: {
         width: 64,
         height: 64,
     },
     storiesCardBorder: {
-        padding: 3, 
+        padding: 3,
         borderWidth: 2,
         borderColor: '#C13584',
         borderRadius: 50,
@@ -148,7 +148,7 @@ export const styles = StyleSheet.create({
         left: 0,
         right: 0,
         zIndex: 10,
-        backgroundColor: '#121212', 
+        backgroundColor: '#121212',
         paddingVertical: 8,
     },
     contentFooter: {
@@ -160,8 +160,8 @@ export const styles = StyleSheet.create({
     footerImg: {
         width: 30,
         height: 30,
-        borderRadius: 50, 
-        resizeMode: 'cover', 
+        borderRadius: 50,
+        resizeMode: 'cover',
     },
     imgPlus: {
         tintColor: "#fff",

@@ -9,12 +9,11 @@ export const styles = StyleSheet.create({
         width: '100%',
     },
     inputContainer: {
-        width: '90%',
         flexDirection: 'row',
         alignItems: 'center',
         paddingLeft: 35,
         paddingVertical: 10,
-        marginHorizontal: 10,
+        marginHorizontal: 15,
         backgroundColor: '#262626',
         marginTop: 10,
         borderRadius: 10,
@@ -41,10 +40,11 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         gap: 3,
+        width: '100%',
     },
     feedImg: {
-        width: 120,
-        height: 120,
+        width: 130,
+        height: 130,
         marginHorizontal: 1.5,
     },
     footer: {
