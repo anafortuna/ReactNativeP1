@@ -45,6 +45,7 @@ export const styles = StyleSheet.create({
         paddingLeft: 10,
         alignContent: 'center',
         paddingVertical: 10,
+        marginBottom: 10,
     },
     storiesCard: {
         marginRight: 14,
@@ -66,8 +67,7 @@ export const styles = StyleSheet.create({
     contentHeader: {
         justifyContent: 'space-between',
         flexDirection: 'row',
-        paddingLeft: 10,
-        paddingRight: 60,
+        paddingHorizontal: 10,
         alignItems: 'center',
     },
     contentHeaderLeft: {
@@ -83,14 +83,13 @@ export const styles = StyleSheet.create({
     },
     contentImg: {
         marginVertical: 5,
-        width: 500,
-        height: 500,
+        width: 385,
+        height: 385,
     },
     contentFeed: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingRight: 50,
-        paddingLeft: 5,
+        paddingHorizontal: 5,
     },
     contentLeft: {
         alignItems: 'center',
