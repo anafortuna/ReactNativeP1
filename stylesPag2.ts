@@ -3,7 +3,7 @@ import { Platform, StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#000',
+        backgroundColor: '#121212',
         alignItems: 'center', 
         paddingBottom: 135,
         width: '100%',
@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
         paddingLeft: 35,
         paddingVertical: 10,
         marginHorizontal: 10,
-        backgroundColor: '#363636',
+        backgroundColor: '#262626',
         marginTop: 40,
         borderRadius: 10,
         height: 40,
@@ -56,7 +56,7 @@ export const styles = StyleSheet.create({
         left: 0,
         right: 0,
         zIndex: 10,
-        backgroundColor: '#000', 
+        backgroundColor: '#121212', 
         paddingVertical: 8,
     },
     contentFooter: {

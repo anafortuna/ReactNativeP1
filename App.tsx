@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FlatList, Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { FlatList, Image, ScrollView, StatusBar, Text, TouchableOpacity, View } from 'react-native';
 import { styles } from './styles'
 import Logo from './src/assets/logo2.png'
 import Stroke from './src/assets/stroke.png'
@@ -157,6 +157,7 @@ export default function App() {
   };
 
   return <View style={styles.container}>
+     <StatusBar backgroundColor='#121212' barStyle='light-content' />
     <View style={styles.header}>
       <View style={styles.headerLeft}>
         <Image source={Logo} style={styles.logoImg} />

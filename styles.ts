@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#000',
+        backgroundColor: '#121212',
         alignItems: 'flex-start', 
         paddingBottom: 50,
         width: '100%',
@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
         width: '100%',
         flexDirection: 'row',
         paddingHorizontal: 10,
-        marginTop: 20,
+        marginTop: 5,
     },
     headerLeft: {
         flexDirection: 'row',
@@ -148,7 +148,7 @@ export const styles = StyleSheet.create({
         left: 0,
         right: 0,
         zIndex: 10,
-        backgroundColor: '#000', 
+        backgroundColor: '#121212', 
         paddingVertical: 8,
     },
     contentFooter: {
