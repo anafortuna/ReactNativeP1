@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#000',
         alignItems: 'flex-start', 
+        paddingBottom: 145,
     },
     inputContainer: {
         flexDirection: 'row',
