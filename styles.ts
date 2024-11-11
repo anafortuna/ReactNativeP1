@@ -84,8 +84,8 @@ export const styles = StyleSheet.create({
         height: 25,
     },
     bookIcon: {
-        width: 25,
-        height: 25,
+        width: 23,
+        height: 23,
         tintColor: '#fff',
     },
     contentHeaderImg: {
