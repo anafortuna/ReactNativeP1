@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FlatList, Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { styles } from './styles'
 import Logo from './src/assets/logo2.png'
@@ -13,7 +13,9 @@ import foto7 from './src/assets/Perfil3.png'
 import foto8 from './src/assets/Perfil4.png'
 import Points from './src/assets/points.png'
 import Bookmark from './src/assets/Bookmark.png'
+import BookmarkFilled from './src/assets/BookmarkFilled.png'
 import Heart from './src/assets/Heart.png'
+import RedHeart from './src/assets/redHeart.png'
 import Comment from './src/assets/Comment.png'
 import Share from './src/assets/Share.png'
 import House from './src/assets/house.png'
@@ -119,7 +121,40 @@ const FEED = [
     tempoPostagem: 'Há 22 horas',
   },
 ];
+
 export default function App() {
+  const [likedItems, setLikedItems] = useState<{ [key: string]: boolean }>({});
+  const [likes, setLikes] = useState<{ [key: string]: number }>(
+    FEED.reduce((acc, item) => {
+      acc[item.id] = item.curtidas; // Inicializa o número de curtidas com o valor inicial
+      return acc;
+    }, {} as { [key: string]: number })
+  );
+  const [savedItems, setSavedItems] = useState<{ [key: string]: boolean }>({});
+
+  const toggleSave = (itemId: string) => {
+    setSavedItems((prevSavedItems) => ({
+      ...prevSavedItems,
+      [itemId]: !prevSavedItems[itemId],
+    }));
+  }; 
+
+  const toggleLike = (itemId: string) => {
+    setLikedItems((prevLikedItems) => {
+      const isLiked = prevLikedItems[itemId];
+
+      // Atualiza o número de curtidas
+      setLikes((prevLikes) => ({
+        ...prevLikes,
+        [itemId]: isLiked ? prevLikes[itemId] - 1 : prevLikes[itemId] + 1,
+      }));
+
+      return {
+        ...prevLikedItems,
+        [itemId]: !isLiked,
+      };
+    });
+  };
 
   return <View style={styles.container}>
     <View style={styles.header}>
@@ -176,8 +211,13 @@ export default function App() {
           </View>
           <View style={styles.contentFeed}>
             <View style={styles.contentLeft}>
-              <TouchableOpacity activeOpacity={0.6}>
-                <Image source={Heart} />
+              <TouchableOpacity
+                activeOpacity={0.6}
+                onPress={() => toggleLike(item.id)}
+              >
+                <Image
+                  source={likedItems[item.id] ? RedHeart : Heart} style={styles.heartIcon}
+                />
               </TouchableOpacity>
               <TouchableOpacity activeOpacity={0.6}>
                 <Image source={Comment} />
@@ -186,12 +226,13 @@ export default function App() {
                 <Image source={Share} />
               </TouchableOpacity>
             </View>
-            <TouchableOpacity activeOpacity={0.6}>
-              <Image source={Bookmark} />
+            <TouchableOpacity activeOpacity={0.6}
+            onPress={() => toggleSave(item.id)}>
+              <Image  source={savedItems[item.id] ? BookmarkFilled : Bookmark} style={styles.bookIcon} />
             </TouchableOpacity>
           </View>
           <View style={styles.contentText}>
-            <Text style={styles.textLikes}>{item.curtidas} curtidas</Text>
+            <Text style={styles.textLikes}>{likes[item.id]} curtidas</Text>
             <View style={styles.comment}>
               <Text style={styles.textSubtitleTitle}>{item.autorLegenda}</Text>
               <Text style={styles.textSubtitle}>{item.legenda}</Text>

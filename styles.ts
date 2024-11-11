@@ -79,6 +79,15 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
     },
+    heartIcon: {
+        width: 25,
+        height: 25,
+    },
+    bookIcon: {
+        width: 25,
+        height: 25,
+        tintColor: '#fff',
+    },
     contentHeaderImg: {
         width: 40,
         height: 40,
