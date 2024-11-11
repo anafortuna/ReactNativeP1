@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#121212',
         alignItems: 'center', 
-        paddingBottom: 135,
+        paddingBottom: 105,
         width: '100%',
     },
     inputContainer: {
@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
         paddingVertical: 10,
         marginHorizontal: 10,
         backgroundColor: '#262626',
-        marginTop: 40,
+        marginTop: 10,
         borderRadius: 10,
         height: 40,
     },

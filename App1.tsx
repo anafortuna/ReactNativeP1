@@ -137,7 +137,7 @@ export default function App() {
       ...prevSavedItems,
       [itemId]: !prevSavedItems[itemId],
     }));
-  }; 
+  };
 
   const toggleLike = (itemId: string) => {
     setLikedItems((prevLikedItems) => {
@@ -157,7 +157,7 @@ export default function App() {
   };
 
   return <View style={styles.container}>
-     <StatusBar backgroundColor='#121212' barStyle='light-content' />
+    <StatusBar backgroundColor='#121212' barStyle='light-content' />
     <View style={styles.header}>
       <View style={styles.headerLeft}>
         <Image source={Logo} style={styles.logoImg} />
@@ -228,8 +228,8 @@ export default function App() {
               </TouchableOpacity>
             </View>
             <TouchableOpacity activeOpacity={0.6}
-            onPress={() => toggleSave(item.id)}>
-              <Image  source={savedItems[item.id] ? BookmarkFilled : Bookmark} style={styles.bookIcon} />
+              onPress={() => toggleSave(item.id)}>
+              <Image source={savedItems[item.id] ? BookmarkFilled : Bookmark} style={styles.bookIcon} />
             </TouchableOpacity>
           </View>
           <View style={styles.contentText}>

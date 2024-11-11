@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { FlatList, Image, StatusBar, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { styles } from './stylesPag2'
 import Search from './src/assets/search.png'
 import House from './src/assets/casa.png'
@@ -133,6 +133,7 @@ const DATA = [
 export default function App() {
 
     return <View style={styles.container}>
+        <StatusBar backgroundColor='#121212' barStyle='light-content' />
         <View style={styles.inputContainer}>
             <Image source={Search} style={styles.inputIcon} />
             <TextInput
