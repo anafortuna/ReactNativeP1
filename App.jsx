@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, Image, Text, TextInput, View } from 'react-native';
+import { FlatList, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { styles } from './stylesPag2'
 import Search from './src/assets/search.png'
 import House from './src/assets/casa.png'

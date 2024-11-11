@@ -38,12 +38,12 @@ export const styles = StyleSheet.create({
     flatListContent: {
         justifyContent: 'space-between',
         alignItems: 'center',
-        gap: 4,
+        gap: 3,
     },
     feedImg: {
         width: 120,
         height: 120,
-        marginHorizontal: 2,
+        marginHorizontal: 1.5,
     },
     footer: {
         borderTopColor: '#A9A9A9',
