@@ -154,11 +154,19 @@ export default function App() {
         </View>
         <View style={styles.footer}>
             <View style={styles.contentFooter}>
-                <Image source={House} style={styles.footerIcon} />
+                <TouchableOpacity activeOpacity={0.6}>
+                    <Image source={House} style={styles.footerIcon} />
+                </TouchableOpacity>
                 <Image source={Procurar} style={styles.footerIcon} />
-                <Image style={styles.footerIcon} source={Add} />
-                <Image source={Union} />
-                <Image source={foto} style={styles.footerImg} />
+                <TouchableOpacity activeOpacity={0.6}>
+                    <Image style={styles.footerIcon} source={Add} />
+                </TouchableOpacity>
+                <TouchableOpacity activeOpacity={0.6}>
+                    <Image source={Union} />
+                </TouchableOpacity>
+                <TouchableOpacity activeOpacity={0.6}>
+                    <Image source={foto} style={styles.footerImg} />
+                </TouchableOpacity>
             </View>
         </View>
     </View>

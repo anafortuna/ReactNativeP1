@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, Image, ScrollView, Text, View } from 'react-native';
+import { FlatList, Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { styles } from './styles'
 import Logo from './src/assets/logo2.png'
 import Stroke from './src/assets/stroke.png'
@@ -81,9 +81,8 @@ const FEED = [
   {
     id: Math.random().toString(36).substring(2, 27),
     nome: 'Ana',
-    foto: foto5, 
-    pontos: Points, 
-    imagemPost: Imagem1, 
+    foto: foto5,
+    imagemPost: Imagem1,
     curtidas: 221,
     legenda: 'Work work work',
     autorLegenda: 'Ana',
@@ -92,9 +91,8 @@ const FEED = [
   {
     id: Math.random().toString(36).substring(2, 27),
     nome: 'Júlia',
-    foto: foto8, 
-    pontos: Points, 
-    imagemPost: Imagem2, 
+    foto: foto8,
+    imagemPost: Imagem2,
     curtidas: 154,
     legenda: 'Fim de tarde *.*',
     autorLegenda: 'Júlia',
@@ -104,8 +102,7 @@ const FEED = [
     id: Math.random().toString(36).substring(2, 27),
     nome: 'João',
     foto: foto3,
-    pontos: Points, 
-    imagemPost: Imagem3, 
+    imagemPost: Imagem3,
     curtidas: 325,
     legenda: 'Viagem com ela s2',
     autorLegenda: 'João',
@@ -114,9 +111,8 @@ const FEED = [
   {
     id: Math.random().toString(36).substring(2, 27),
     nome: 'Marta',
-    foto: foto4, 
-    pontos: Points, 
-    imagemPost: Imagem4, 
+    foto: foto4,
+    imagemPost: Imagem4,
     curtidas: 102,
     legenda: 'Um sonho',
     autorLegenda: 'Marta',
@@ -129,11 +125,17 @@ export default function App() {
     <View style={styles.header}>
       <View style={styles.headerLeft}>
         <Image source={Logo} style={styles.logoImg} />
-        <Image source={Down} style={styles.downIcon} />
+        <TouchableOpacity activeOpacity={0.6}>
+          <Image source={Down} style={styles.downIcon} />
+        </TouchableOpacity>
       </View>
       <View style={styles.headerOptions}>
-        <Image source={Stroke} />
-        <Image source={Message} style={styles.messageIcon}/>
+        <TouchableOpacity activeOpacity={0.6}>
+          <Image source={Stroke} />
+        </TouchableOpacity>
+        <TouchableOpacity activeOpacity={0.6}>
+          <Image source={Message} style={styles.messageIcon} />
+        </TouchableOpacity>
       </View>
     </View>
     <View style={styles.stories}>
@@ -165,18 +167,28 @@ export default function App() {
               </View>
               <Text style={styles.contentHeaderImgText}>{item.nome}</Text>
             </View>
-            <Image source={item.pontos} />
+            <TouchableOpacity activeOpacity={0.6}>
+              <Image source={Points} />
+            </TouchableOpacity>
           </View>
           <View>
             <Image style={styles.contentImg} source={item.imagemPost} />
           </View>
           <View style={styles.contentFeed}>
             <View style={styles.contentLeft}>
-              <Image source={Heart} />
-              <Image source={Comment} />
-              <Image source={Share} />
+              <TouchableOpacity activeOpacity={0.6}>
+                <Image source={Heart} />
+              </TouchableOpacity>
+              <TouchableOpacity activeOpacity={0.6}>
+                <Image source={Comment} />
+              </TouchableOpacity>
+              <TouchableOpacity activeOpacity={0.6}>
+                <Image source={Share} />
+              </TouchableOpacity>
             </View>
-            <Image source={Bookmark} />
+            <TouchableOpacity activeOpacity={0.6}>
+              <Image source={Bookmark} />
+            </TouchableOpacity>
           </View>
           <View style={styles.contentText}>
             <Text style={styles.textLikes}>{item.curtidas} curtidas</Text>
@@ -196,10 +208,18 @@ export default function App() {
     <View style={styles.footer}>
       <View style={styles.contentFooter}>
         <Image source={House} />
-        <Image source={Search} />
-        <Image style={styles.imgPlus} source={Add} />
-        <Image source={Union} />
-        <Image source={PerfilFooter} style={styles.footerImg} />
+        <TouchableOpacity activeOpacity={0.6}>
+          <Image source={Search} />
+        </TouchableOpacity>
+        <TouchableOpacity activeOpacity={0.6}>
+          <Image style={styles.imgPlus} source={Add} />
+        </TouchableOpacity>
+        <TouchableOpacity activeOpacity={0.6}>
+          <Image source={Union} />
+        </TouchableOpacity>
+        <TouchableOpacity activeOpacity={0.6}>
+          <Image source={PerfilFooter} style={styles.footerImg} />
+        </TouchableOpacity>
       </View>
     </View>
   </View>
