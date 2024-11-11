@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#000',
         alignItems: 'flex-start', 
         paddingBottom: 40,
+        width: '100%',
     },
     header: {
         alignItems: 'center',
@@ -16,11 +17,22 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 10,
         marginTop: 20,
     },
+    headerLeft: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    downIcon: {
+        tintColor: '#fff',
+    },   
     headerOptions: {
         alignItems: 'center',
         flexDirection: 'row',
-        gap: 10,
+        gap: 20,
         paddingRight: 5,
+    },
+    messageIcon: {
+        width: 25,
+        height: 25,
     },
     storiesName: {
         marginTop: 5, // Espaço entre a imagem e o nome
@@ -71,6 +83,8 @@ export const styles = StyleSheet.create({
     },
     contentImg: {
         marginVertical: 5,
+        width: 500,
+        height: 500,
     },
     contentFeed: {
         flexDirection: 'row',
