@@ -40,9 +40,9 @@ export const styles = StyleSheet.create({
         height: 25,
     },
     storiesName: {
-        marginTop: 5, // Espaço entre a imagem e o nome
-        fontSize: 14, // Tamanho da fonte // Negrito, opcional
-        textAlign: 'center', // Alinha o nome ao centro
+        marginTop: 5, 
+        fontSize: 14, 
+        textAlign: 'center', 
         color: '#fff',
     },
     stories: {
@@ -61,7 +61,7 @@ export const styles = StyleSheet.create({
         height: 64,
     },
     storiesCardBorder: {
-        padding: 3, // Espaço preto entre a imagem e a borda colorida
+        padding: 3, 
         borderWidth: 2,
         borderColor: '#C13584',
         borderRadius: 50,

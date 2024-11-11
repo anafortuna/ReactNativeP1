@@ -65,9 +65,9 @@ export const styles = StyleSheet.create({
     },
     footerImg: {
         width: 30,
-        height: 30, // Certifique-se de que a altura seja igual à largura
-        borderRadius: 50, // Ajuste para que a imagem tenha bordas arredondadas completas
-        resizeMode: 'cover', // Garante que a imagem ocupe todo o espaço sem cortes
+        height: 30, 
+        borderRadius: 50, 
+        resizeMode: 'cover', 
     },
     footerIcon: {
         tintColor: "#fff",
