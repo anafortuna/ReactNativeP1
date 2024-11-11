@@ -7,8 +7,11 @@ import foto from './src/assets/foto.png'
 import foto2 from './src/assets/foto2.png'
 import foto3 from './src/assets/foto3.png'
 import foto4 from './src/assets/foto4.png'
+import foto5 from './src/assets/Perfil1.png'
+import foto6 from './src/assets/Perfil2.png'
+import foto7 from './src/assets/Perfil3.png'
+import foto8 from './src/assets/Perfil4.png'
 import Points from './src/assets/points.png'
-import Imagem from './src/assets/image.png'
 import Bookmark from './src/assets/Bookmark.png'
 import Heart from './src/assets/Heart.png'
 import Comment from './src/assets/Comment.png'
@@ -21,10 +24,10 @@ import Perfil from './src/assets/fotoPerfil.png'
 import PerfilFooter from './src/assets/fotoPerfil2.png'
 import Down from './src/assets/down.png'
 import Message from './src/assets/message.png'
-import Imagem1 from './src/assets/1.png'
-import Imagem2 from './src/assets/2.png'
-import Imagem3 from './src/assets/3.png'
-import Imagem4 from './src/assets/4.png'
+import Imagem1 from './src/assets/Image1.png'
+import Imagem2 from './src/assets/Image2.png'
+import Imagem3 from './src/assets/Image3.png'
+import Imagem4 from './src/assets/Image4.png'
 
 const DATA = [
   {
@@ -34,13 +37,13 @@ const DATA = [
   },
   {
     id: Math.random().toString(36).substring(2, 27),
-    photoURL: foto,
+    photoURL: foto5,
     name: "Ana",
   },
   {
     id: Math.random().toString(36).substring(2, 27),
-    photoURL: foto2,
-    name: "Carla",
+    photoURL: foto8,
+    name: "Júlia",
   },
   {
     id: Math.random().toString(36).substring(2, 27),
@@ -55,22 +58,22 @@ const DATA = [
   {
     id: Math.random().toString(36).substring(2, 27),
     photoURL: foto,
-    name: "Ana",
+    name: "Verônica",
+  },
+  {
+    id: Math.random().toString(36).substring(2, 27),
+    photoURL: foto6,
+    name: "Sabrina",
+  },
+  {
+    id: Math.random().toString(36).substring(2, 27),
+    photoURL: foto7,
+    name: "Maurício",
   },
   {
     id: Math.random().toString(36).substring(2, 27),
     photoURL: foto2,
     name: "Carla",
-  },
-  {
-    id: Math.random().toString(36).substring(2, 27),
-    photoURL: foto3,
-    name: "João",
-  },
-  {
-    id: Math.random().toString(36).substring(2, 27),
-    photoURL: foto4,
-    name: "Marta",
   },
 ]
 
@@ -78,7 +81,7 @@ const FEED = [
   {
     id: Math.random().toString(36).substring(2, 27),
     nome: 'Ana',
-    foto: foto, 
+    foto: foto5, 
     pontos: Points, 
     imagemPost: Imagem1, 
     curtidas: 221,
@@ -88,13 +91,13 @@ const FEED = [
   },
   {
     id: Math.random().toString(36).substring(2, 27),
-    nome: 'Carla',
-    foto: foto2, 
+    nome: 'Júlia',
+    foto: foto8, 
     pontos: Points, 
     imagemPost: Imagem2, 
     curtidas: 154,
     legenda: 'Fim de tarde *.*',
-    autorLegenda: 'Carla',
+    autorLegenda: 'Júlia',
     tempoPostagem: 'Há 15 horas',
   },
   {
